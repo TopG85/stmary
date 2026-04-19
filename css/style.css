@@ -2,16 +2,19 @@
    St Mary's Church Handforth - Main Stylesheet
    ========================================================================== */
 
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Merriweather+Sans:wght@400;500;600;700&display=swap');
+
 /* --------------------------------------------------------------------------
    CSS Custom Properties (Design Tokens)
    -------------------------------------------------------------------------- */
 :root {
   /* Colours */
-  --colour-primary:     #2c5f8a;   /* Deep church blue */
-  --colour-primary-dk:  #1e4368;
-  --colour-primary-lt:  #e8f1f8;
-  --colour-accent:      #c9973a;   /* Warm gold */
-  --colour-accent-lt:   #f5e9d5;
+  --colour-primary:     #2E6E4A;   /* Amazon Green */
+  --colour-primary-dk:  #1a4530;   /* Dark green */
+  --colour-primary-lt:  #8FBF9A;   /* Summer Green */
+  --colour-accent:      #F2C77D;   /* Golden Sand */
+  --colour-accent-lt:   #fdf3e0;
   --colour-white:       #ffffff;
   --colour-off-white:   #f8f6f3;
   --colour-light-grey:  #e9e6e1;
@@ -21,10 +24,14 @@
   --colour-text-muted:  #666666;
   --colour-success:     #2e7d32;
   --colour-error:       #c62828;
+  --colour-amazon:      #2E6E4A;
+  --colour-summer-green: #8FBF9A;
+  --colour-golden-sand: #F2C77D;
+  --colour-danube:      #6B9CD6;
 
   /* Typography */
-  --font-heading:  'Georgia', 'Times New Roman', serif;
-  --font-body:     'Segoe UI', Arial, Helvetica, sans-serif;
+  --font-heading:  'Gloock', 'Georgia', 'Times New Roman', serif;
+  --font-body:     'Merriweather Sans', 'Segoe UI', Arial, Helvetica, sans-serif;
 
   /* Spacing */
   --space-xs:   0.25rem;
@@ -37,7 +44,7 @@
 
   /* Sizes */
   --max-width:          1100px;
-  --nav-height:         70px;
+  --nav-height:         140px;
   --border-radius:      6px;
   --border-radius-lg:   12px;
 
@@ -323,8 +330,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 .nav-brand-icon {
-  width: 40px;
-  height: 40px;
+  width: 75px;
+  height: 75px;
   background-color: var(--colour-primary);
   border-radius: 50%;
   display: flex;
@@ -334,8 +341,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 .nav-brand-icon svg {
-  width: 22px;
-  height: 22px;
+  width: 45px;
+  height: 45px;
   fill: var(--colour-white);
 }
 
@@ -483,7 +490,7 @@ p:last-child { margin-bottom: 0; }
    -------------------------------------------------------------------------- */
 .hero {
   position: relative;
-  min-height: 520px;
+  min-height: 900px;
   display: flex;
   align-items: center;
   background-color: var(--colour-primary-dk);
@@ -520,7 +527,7 @@ p:last-child { margin-bottom: 0; }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 10;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--space-3xl) var(--space-lg);
@@ -544,6 +551,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--colour-white);
   max-width: 680px;
   margin-bottom: var(--space-lg);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero-subtitle {
@@ -552,12 +560,80 @@ p:last-child { margin-bottom: 0; }
   max-width: 560px;
   margin-bottom: var(--space-xl);
   line-height: 1.65;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-actions {
   display: flex;
   gap: var(--space-md);
   flex-wrap: wrap;
+}
+
+/* Hero Carousel */
+.hero-carousel {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-carousel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+.carousel-slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 0.85;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: var(--space-lg);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  padding: 0;
+}
+
+.dot:hover {
+  border-color: rgba(255,255,255,0.8);
+}
+
+.dot.active {
+  background-color: rgba(255,255,255,0.9);
+  border-color: rgba(255,255,255,0.9);
 }
 
 /* Page Hero (smaller, for inner pages) */

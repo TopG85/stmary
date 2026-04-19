@@ -167,4 +167,57 @@
     });
   });
 
+  /* ------------------------------------------------------------------
+     Hero Image Carousel — Auto-rotates every 20 seconds
+     ------------------------------------------------------------------ */
+  (function initCarousel() {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (slides.length === 0) return;
+
+    let currentSlide = 0;
+    let carouselInterval;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function startCarousel() {
+      carouselInterval = setInterval(nextSlide, 20000); // 20 second delay
+    }
+
+    function stopCarousel() {
+      clearInterval(carouselInterval);
+    }
+
+    // Manual dot navigation
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+        stopCarousel();
+        startCarousel(); // Reset timer
+      });
+    });
+
+    startCarousel();
+    
+    // Pause on hover, resume on mouse leave
+    const carousel = document.querySelector('.hero-carousel');
+    if (carousel) {
+      carousel.addEventListener('mouseenter', stopCarousel);
+      carousel.addEventListener('mouseleave', startCarousel);
+    }
+  })();
+
 })();

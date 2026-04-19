@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover what's on at St Mary's Church Handforth — weekly services, children's groups, community events, Bible study, social activities, and more.">
-  <title>What's On | St Mary's Church Handforth</title>
+  <meta name="description" content="Discover what's on at St Mary's Methodist Church Handforth — weekly services, children's groups, community events, Bible study, social activities, and more.">
+  <title>What's On | St Mary's Methodist Church Handforth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,14 +17,14 @@
   <!-- Navigation -->
   <nav class="site-nav" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand" aria-label="St Mary's Church Handforth — Home">
+      <a href="index.html" class="nav-brand" aria-label="St Mary's Methodist Church Handforth — Home">
         <div class="nav-brand-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
           </svg>
         </div>
         <div class="nav-brand-text">
-          <strong>St Mary's Church</strong>
+          <strong>St Mary's Methodist Church</strong>
           <span>Handforth, Cheshire</span>
         </div>
       </a>
@@ -38,7 +40,8 @@
         <li><a href="about.html">About</a></li>
         <li><a href="whats-on.html" class="active" aria-current="page">What's On</a></li>
         <li><a href="visit.html">Visit Us</a></li>
-        <li><a href="contact.html" class="btn btn--primary nav-cta">Contact Us</a></li>
+        <li><a href="room-hire.html">Room Hire</a></li>
+        <li><a href="contact.html" class="btn btn--primary nav-cta" style="color: white;">Contact Us</a></li>
       </ul>
     </div>
   </nav>
@@ -65,319 +68,115 @@
       </div>
     </section>
 
-    <!-- Weekly Schedule -->
-    <section class="section" aria-labelledby="schedule-heading" id="schedule">
+    <!-- About Our Activities -->
+    <section class="section" aria-labelledby="about-heading">
       <div class="container">
-        <div class="section-header">
-          <h2 id="schedule-heading">Regular Weekly Activities</h2>
-          <p>Our regular programme runs throughout the year. Everyone is welcome to join.</p>
+        <div style="max-width:800px; margin:0 auto; text-align:center;">
+          <h2 id="about-heading">What We Do</h2>
+          <p style="font-size:1.05rem; color:var(--colour-text-muted); line-height:1.6;">
+            St Mary's is located at the edge of Handforth and we aim to be an active, welcoming part of our community. On these pages you can discover everything that happens regularly at our church — from weekly worship and prayer to groups for all ages and community events.
+          </p>
         </div>
-
-        <!-- Weekly Table -->
-        <div style="overflow-x:auto; border-radius:var(--border-radius-lg); box-shadow:var(--shadow-md);">
-          <table style="width:100%; border-collapse:collapse; background:white; min-width:500px;" role="table" aria-label="Weekly programme">
-            <thead>
-              <tr style="background:var(--colour-primary); color:white;">
-                <th style="padding:1rem 1.25rem; text-align:left; font-weight:700; font-size:0.9rem; letter-spacing:0.04em; text-transform:uppercase;" scope="col">Day</th>
-                <th style="padding:1rem 1.25rem; text-align:left; font-weight:700; font-size:0.9rem; letter-spacing:0.04em; text-transform:uppercase;" scope="col">Activity</th>
-                <th style="padding:1rem 1.25rem; text-align:left; font-weight:700; font-size:0.9rem; letter-spacing:0.04em; text-transform:uppercase;" scope="col">Time</th>
-                <th style="padding:1rem 1.25rem; text-align:left; font-weight:700; font-size:0.9rem; letter-spacing:0.04em; text-transform:uppercase;" scope="col">For</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-bottom:1px solid var(--colour-light-grey);">
-                <td style="padding:1rem 1.25rem; font-weight:700; color:var(--colour-primary-dk);">Sunday</td>
-                <td style="padding:1rem 1.25rem;">Morning Worship Service</td>
-                <td style="padding:1rem 1.25rem;"><span class="service-time-badge">10:30am</span></td>
-                <td style="padding:1rem 1.25rem; color:var(--colour-text-muted);">Everyone</td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--colour-light-grey); background:var(--colour-off-white);">
-                <td style="padding:1rem 1.25rem; font-weight:700; color:var(--colour-primary-dk);">Sunday</td>
-                <td style="padding:1rem 1.25rem;">Junior Church (during morning service)</td>
-                <td style="padding:1rem 1.25rem;"><span class="service-time-badge">10:30am</span></td>
-                <td style="padding:1rem 1.25rem; color:var(--colour-text-muted);">Children 4–11</td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--colour-light-grey);">
-                <td style="padding:1rem 1.25rem; font-weight:700; color:var(--colour-primary-dk);">Monday</td>
-                <td style="padding:1rem 1.25rem;">Craft &amp; Chat Group</td>
-                <td style="padding:1rem 1.25rem;"><span class="service-time-badge">2:00pm–4:00pm</span></td>
-                <td style="padding:1rem 1.25rem; color:var(--colour-text-muted);">Adults</td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--colour-light-grey); background:var(--colour-off-white);">
-                <td style="padding:1rem 1.25rem; font-weight:700; color:var(--colour-primary-dk);">Tuesday</td>
-                <td style="padding:1rem 1.25rem;">Toddler &amp; Baby Group "Little Stars"</td>
-                <td style="padding:1rem 1.25rem;"><span class="service-time-badge">9:30am–11:30am</span></td>
-                <td style="padding:1rem 1.25rem; color:var(--colour-text-muted);">0–4 &amp; parents/carers</td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--colour-light-grey);">
-                <td style="padding:1rem 1.25rem; font-weight:700; color:var(--colour-primary-dk);">Wednesday</td>
-                <td style="padding:1rem 1.25rem;">Midweek Prayer &amp; Bible Study</td>
-                <td style="padding:1rem 1.25rem;"><span class="service-time-badge">10:00am</span></td>
-                <td style="padding:1rem 1.25rem; color:var(--colour-text-muted);">Everyone</td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--colour-light-grey); background:var(--colour-off-white);">
-                <td style="padding:1rem 1.25rem; font-weight:700; color:var(--colour-primary-dk);">Thursday</td>
-                <td style="padding:1rem 1.25rem;">Young People's Group (11–18)</td>
-                <td style="padding:1rem 1.25rem;"><span class="service-time-badge">6:30pm–8:00pm</span></td>
-                <td style="padding:1rem 1.25rem; color:var(--colour-text-muted);">Age 11–18</td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--colour-light-grey);">
-                <td style="padding:1rem 1.25rem; font-weight:700; color:var(--colour-primary-dk);">Friday</td>
-                <td style="padding:1rem 1.25rem;">Coffee &amp; Chat Drop-in</td>
-                <td style="padding:1rem 1.25rem;"><span class="service-time-badge">10:00am–12:00pm</span></td>
-                <td style="padding:1rem 1.25rem; color:var(--colour-text-muted);">Everyone — no need to book!</td>
-              </tr>
-              <tr style="background:var(--colour-off-white);">
-                <td style="padding:1rem 1.25rem; font-weight:700; color:var(--colour-primary-dk);">Monthly</td>
-                <td style="padding:1rem 1.25rem;">Men's Breakfast (last Saturday of month)</td>
-                <td style="padding:1rem 1.25rem;"><span class="service-time-badge">8:30am</span></td>
-                <td style="padding:1rem 1.25rem; color:var(--colour-text-muted);">Men of all ages</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p style="margin-top:1rem; font-size:0.9rem; color:var(--colour-text-muted);">
-          * Some activities may not run during school holidays. Check our <a href="contact.html">contact page</a> or call us to confirm.
-        </p>
       </div>
     </section>
 
-    <!-- Groups for All Ages -->
+    <!-- Church Open for Prayer -->
+    <section class="section section--alt" aria-labelledby="prayer-heading">
+      <div class="container">
+        <div style="max-width:600px; margin:0 auto; text-align:center;">
+          <h2 id="prayer-heading">🙏 Church Open for Quiet Prayer</h2>
+          <p style="font-size:1rem; color:var(--colour-text-muted);">
+            Our church is open on some occasions for personal prayer and quiet reflection. Check back or <a href="contact.html">get in touch</a> for current times when the church is available for prayer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diary & Events Quick Reference -->
+    <section class="section section--primary" aria-labelledby="diary-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="diary-heading">Diary &amp; Events</h2>
+          <p>Key times to remember at St Mary's</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
+          <div style="background:rgba(255,255,255,0.1); padding:1.5rem; border-radius:var(--border-radius-lg); border-left:4px solid var(--colour-accent);">
+            <svg viewBox="0 0 100 100" style="height: 80px; width: auto; margin: 0 auto 1rem; display: block;" aria-hidden="true">
+              <rect x="40" y="10" width="20" height="80" fill="var(--colour-accent)" rx="5"/>
+              <rect x="10" y="40" width="80" height="20" fill="var(--colour-accent)" rx="5"/>
+            </svg>
+            <h3 style="margin:0 0 0.5rem; font-size:1.1rem; color:white;">Sunday Morning Worship</h3>
+            <p style="margin:0; font-size:1.3rem; font-weight:700; color:var(--colour-accent);">10:30am</p>
+            <p style="margin:0.5rem 0 0; font-size:0.95rem; color:rgba(255,255,255,0.9);">Every Sunday — all are welcome, no prior experience needed.</p>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.1); padding:1.5rem; border-radius:var(--border-radius-lg); border-left:4px solid var(--colour-accent);">
+            <img src="https://stmaryshandforth.weebly.com/uploads/2/3/8/4/23843962/7149240.jpg" alt="Tiny Hands Toddler Group" style="height: 80px; width: auto; margin: 0 auto 1rem; display: block; border-radius: var(--border-radius-md);">
+            <h3 style="margin:0 0 0.5rem; font-size:1.1rem; color:white;">Tiny Hands Toddler Group</h3>
+            <p style="margin:0; font-size:1.3rem; font-weight:700; color:var(--colour-accent);">Fridays 10:00am–12:00pm</p>
+            <p style="margin:0.5rem 0 0; font-size:0.95rem; color:rgba(255,255,255,0.9);"><em>Term time only</em><br>Pre-book with Chris: <a href="tel:07975503019" style="color:var(--colour-accent); text-decoration:none; font-weight:600;">07975 503019</a></p>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.1); padding:1.5rem; border-radius:var(--border-radius-lg); border-left:4px solid var(--colour-accent);">
+            <img src="https://stmaryshandforth.weebly.com/uploads/2/3/8/4/23843962/8842585.jpg" alt="Housegroup" style="height: 80px; width: auto; margin: 0 auto 1rem; display: block; border-radius: var(--border-radius-md);">
+            <h3 style="margin:0 0 0.5rem; font-size:1.1rem; color:white;">Housegroup</h3>
+            <p style="margin:0; font-size:1.3rem; font-weight:700; color:var(--colour-accent);">Wednesdays 7:30pm</p>
+            <p style="margin:0.5rem 0 0; font-size:0.95rem; color:rgba(255,255,255,0.9);"><em>Fortnightly, September to July</em><br>Bible study, prayer &amp; fellowship. <a href="contact.html" style="color:var(--colour-accent); text-decoration:none; font-weight:600;">Get in touch</a> to join.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Groups & Organisations -->
     <section class="section section--alt" aria-labelledby="groups-heading" id="groups">
       <div class="container">
         <div class="section-header">
-          <h2 id="groups-heading">Groups for Every Stage of Life</h2>
-          <p>Whether you're 0 or 100, there's a place for you at St Mary's.</p>
+          <h2 id="groups-heading">Groups &amp; Organisations</h2>
+          <p>A variety of groups meet regularly at St Mary's — something for all ages and interests.</p>
         </div>
 
         <div class="grid-3">
-          <div class="group-card">
-            <h3>👶 Little Stars</h3>
-            <p class="group-when">Tuesdays 9:30–11:30am</p>
-            <p>A relaxed and friendly group for babies, toddlers, and pre-schoolers (0–4 years) and their parents or carers. Enjoy play, songs, stories, and a warm cup of tea. A great way to meet other local families.</p>
-          </div>
-
           <div class="group-card group-card--green">
-            <h3>⛪ Junior Church</h3>
-            <p class="group-when">Sundays during morning service</p>
-            <p>Age-appropriate Christian education for children aged 4–11, running at the same time as the main Sunday service. Crafts, games, stories, and discussion help children explore faith in a fun, safe environment.</p>
+            <img src="https://stmaryshandforth.weebly.com/uploads/2/3/8/4/23843962/8842585.jpg" alt="Housegroup" style="height: 80px; width: auto; margin: 0 auto 1rem; display: block; border-radius: var(--border-radius-md);">
+            <h3>🏠 Reflect Group</h3>
+            <p class="group-when">Wednesdays 7:30pm (fortnightly, September to July)</p>
+            <p>We have a regular twice-monthly House Group that meets in a house for drinks and discussion - covering all manner of topics. This is a small, friendly, informal group that don't have all the answers but like to explore the faith together.  We meet on Wednesday evenings fortnightly September to July.  Get in touch if you'd like to join us!</p>
           </div>
 
           <div class="group-card group-card--purple">
-            <h3>🎮 Young People's Group</h3>
-            <p class="group-when">Thursdays 6:30–8:00pm</p>
-            <p>A welcoming space for young people aged 11–18. Activities include games, discussion, creative projects, and opportunities to explore faith and life's big questions — all in a relaxed, non-pressured setting.</p>
+            <img src="https://stmaryshandforth.weebly.com/uploads/2/3/8/4/23843962/6283104.gif" alt="Girl Guiding Rainbows" style="height: 80px; width: auto; margin: 0 auto 1rem; display: block; border-radius: var(--border-radius-md);">
+            <h3>🌈 Girl Guiding — Rainbows</h3>
+            <p class="group-when">Not meeting at present</p>
+            <p>Part of the Girl Guiding Association. Rainbows are for the youngest members aged 4–6 years. When we resume, this group will meet in the church hall on Wednesday evenings. Check back for updates!</p>
           </div>
 
           <div class="group-card group-card--accent">
-            <h3>🧶 Craft &amp; Chat</h3>
-            <p class="group-when">Mondays 2:00–4:00pm</p>
-            <p>Bring your knitting, sewing, or any craft project and enjoy friendly conversation with others. No experience necessary — complete beginners are very welcome! Tea and biscuits always provided.</p>
+            <img src="https://stmaryshandforth.weebly.com/uploads/2/3/8/4/23843962/538559.png" alt="Girl Guiding Brownies" style="height: 80px; width: auto; margin: 0 auto 1rem; display: block; border-radius: var(--border-radius-md);">
+            <h3>🎀 Girl Guiding — Brownies</h3>
+            <p class="group-when">Wednesdays 6:00pm–7:30pm</p>
+            <p>For girls aged 7–10 years. Girl Guides UK provides a structured programme with games, activities, and community involvement. A fantastic way for girls to make friends, build skills, and have fun. New members always welcome!</p>
           </div>
 
           <div class="group-card">
-            <h3>📖 Bible Study Group</h3>
-            <p class="group-when">Wednesdays 10:00am</p>
-            <p>A midweek gathering for prayer and exploring the Bible together. The group follows structured studies and welcomes questions, doubt, and honest discussion. Beginners and experienced believers alike will feel at home.</p>
-          </div>
-
-          <div class="group-card group-card--orange">
-            <h3>☕ Coffee &amp; Chat</h3>
-            <p class="group-when">Fridays 10:00am–12:00pm</p>
-            <p>Simply pop in for a cup of tea or coffee and a chat. No agenda, no commitment — just a friendly and welcoming space in the heart of Handforth. Perfect if you're new to the area or feeling a little lonely.</p>
-          </div>
-
-          <div class="group-card">
-            <h3>🥞 Men's Breakfast</h3>
-            <p class="group-when">Last Saturday of each month, 8:30am</p>
-            <p>A relaxed breakfast gathering for men of all ages. Food, fellowship, and occasionally a short discussion or speaker. A brilliant way to build friendships and start the weekend well.</p>
-          </div>
-
-          <div class="group-card group-card--purple">
-            <h3>🌸 Women's Fellowship</h3>
-            <p class="group-when">Second Tuesday of each month, 2:00pm</p>
-            <p>A warm and supportive group for women — sharing faith, life stories, seasonal activities, and outings. New members are warmly welcomed at any time of year.</p>
+            <img src="https://stmaryshandforth.weebly.com/uploads/2/3/8/4/23843962/85228.gif" alt="Girl Guiding Guides" style="height: 80px; width: auto; margin: 0 auto 1rem; display: block; border-radius: var(--border-radius-md);">
+            <h3>👧 Girl Guiding — Guides</h3>
+            <p class="group-when">Wednesdays 7:00pm–9:00pm</p>
+            <p>For girls aged 10–14 years. Guides enjoy a packed programme including games, adventure, community activities, and opportunities to get involved nationally and internationally. A vibrant, empowering group for young people.</p>
           </div>
 
           <div class="group-card group-card--green">
-            <h3>🌍 Mission &amp; Justice Group</h3>
-            <p class="group-when">Monthly — contact us for dates</p>
-            <p>Passionate about making the world more just and compassionate? This group supports local and global mission, fundraises for charity, and campaigns on issues of justice and care for creation.</p>
+            <img src="https://stmaryshandforth.weebly.com/uploads/2/3/8/4/23843962/8456273.jpg" alt="Methodist Women in Britain" style="height: 80px; width: auto; margin: 0 auto 1rem; display: block; border-radius: var(--border-radius-md);">
+            <h3>💜 Methodist Women in Britain</h3>
+            <p class="group-when">Contact for dates</p>
+            <p>St Mary's has an active group of ladies involved in the Methodist Women in Britain movement — a national women's organisation that equips, encourages, and resources women. A wonderful way to connect with other women in faith and community. All welcome!</p>
+            <a href="https://mwib.org.uk/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Visit MWIB Website</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Upcoming Events -->
-    <section class="section" aria-labelledby="events-heading" id="events">
-      <div class="container">
-        <div class="section-header">
-          <h2 id="events-heading">Upcoming Events</h2>
-          <p>Special events and one-off occasions coming up at St Mary's.</p>
-        </div>
-
-        <div style="display:flex; flex-direction:column; gap:1rem;">
-
-          <div class="event-card event-card--horizontal">
-            <div class="event-card-date">
-              <div class="day">20</div>
-              <div class="month">Apr</div>
-            </div>
-            <div class="event-card-body">
-              <span class="event-tag event-tag--worship">Worship</span>
-              <h3>Easter Celebration Service</h3>
-              <p style="color:var(--colour-text-muted); font-size:0.9rem; margin-bottom:0.5rem;">A joyful family service celebrating the resurrection of Jesus, with traditional hymns, reflections, and children's activities. All welcome — no need to book.</p>
-              <div class="event-meta">
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg> 10:30am</span>
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> St Mary's Church</span>
-                <span>Free — everyone welcome</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="event-card event-card--horizontal">
-            <div class="event-card-date">
-              <div class="day">26</div>
-              <div class="month">Apr</div>
-            </div>
-            <div class="event-card-body">
-              <span class="event-tag event-tag--community">Community</span>
-              <h3>Spring Community Fayre</h3>
-              <p style="color:var(--colour-text-muted); font-size:0.9rem; margin-bottom:0.5rem;">A beloved annual event with stalls, games, tombola, homemade bakes, and live music. All proceeds go to local charities. Perfect for all the family!</p>
-              <div class="event-meta">
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg> 2:00pm–5:00pm</span>
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Church Hall</span>
-                <span>Free entry</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="event-card event-card--horizontal">
-            <div class="event-card-date">
-              <div class="day">3</div>
-              <div class="month">May</div>
-            </div>
-            <div class="event-card-body">
-              <span class="event-tag event-tag--youth">Children &amp; Youth</span>
-              <h3>Junior Church: Creation Week Theme</h3>
-              <p style="color:var(--colour-text-muted); font-size:0.9rem; margin-bottom:0.5rem;">A special themed session for children exploring Creation through art, stories, and games. Parents are welcome to stay or attend the main service.</p>
-              <div class="event-meta">
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg> 10:30am</span>
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Junior Church Room</span>
-                <span>Children 4–11</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="event-card event-card--horizontal">
-            <div class="event-card-date">
-              <div class="day">10</div>
-              <div class="month">May</div>
-            </div>
-            <div class="event-card-body">
-              <span class="event-tag event-tag--social">Social</span>
-              <h3>Quiz Night &amp; Supper</h3>
-              <p style="color:var(--colour-text-muted); font-size:0.9rem; margin-bottom:0.5rem;">Our popular quiz night returns! Form a team of up to 6 and test your general knowledge. Bring your own drinks. Light supper included in ticket price.</p>
-              <div class="event-meta">
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg> 7:00pm–9:30pm</span>
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Church Hall</span>
-                <span>£6 per person — book via contact form</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="event-card event-card--horizontal">
-            <div class="event-card-date">
-              <div class="day">18</div>
-              <div class="month">May</div>
-            </div>
-            <div class="event-card-body">
-              <span class="event-tag event-tag--prayer">Prayer</span>
-              <h3>Prayer Breakfast &amp; Healing Service</h3>
-              <p style="color:var(--colour-text-muted); font-size:0.9rem; margin-bottom:0.5rem;">A quiet, reflective morning of prayer, breakfast, and a healing service with opportunity for individual prayer and anointing. All are welcome.</p>
-              <div class="event-meta">
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg> 8:30am–10:00am</span>
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> St Mary's Church</span>
-                <span>Free — all welcome</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="event-card event-card--horizontal">
-            <div class="event-card-date">
-              <div class="day">7</div>
-              <div class="month">Jun</div>
-            </div>
-            <div class="event-card-body">
-              <span class="event-tag event-tag--community">Community</span>
-              <h3>Handforth Village Walk</h3>
-              <p style="color:var(--colour-text-muted); font-size:0.9rem; margin-bottom:0.5rem;">A gentle guided walk around Handforth for all ages and abilities, ending at the church hall for soup and a roll. Meet new friends and enjoy the local area.</p>
-              <div class="event-meta">
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg> 10:00am</span>
-                <span><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Meet at church entrance</span>
-                <span>Free — all welcome</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Seasonal Highlights -->
-    <section class="section section--primary" aria-labelledby="seasonal-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 id="seasonal-heading">Special Services &amp; Seasonal Events</h2>
-          <p>Throughout the year, we mark the seasons of the church calendar with special services and community celebrations.</p>
-        </div>
-        <div class="grid-4">
-          <div class="card">
-            <div class="card-body" style="text-align:center;">
-              <div style="font-size:2.5rem; margin-bottom:0.75rem;" aria-hidden="true">🌸</div>
-              <h3>Easter</h3>
-              <p>Palm Sunday, Holy Week services, and an uplifting Easter Sunday celebration for the whole family.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body" style="text-align:center;">
-              <div style="font-size:2.5rem; margin-bottom:0.75rem;" aria-hidden="true">🌻</div>
-              <h3>Harvest</h3>
-              <p>A harvest festival service with donations going to local foodbanks, followed by a shared lunch.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body" style="text-align:center;">
-              <div style="font-size:2.5rem; margin-bottom:0.75rem;" aria-hidden="true">🕯️</div>
-              <h3>Remembrance</h3>
-              <p>A moving act of remembrance on Remembrance Sunday, honouring those who gave their lives.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body" style="text-align:center;">
-              <div style="font-size:2.5rem; margin-bottom:0.75rem;" aria-hidden="true">⭐</div>
-              <h3>Christmas</h3>
-              <p>Carols by candlelight, a children's nativity, Midnight Mass, and a Christmas Day service.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section section--accent" aria-labelledby="whats-on-cta">
-      <div class="container text-center">
-        <h2 id="whats-on-cta">Want to Know More?</h2>
-        <p style="font-size:1.1rem; color:var(--colour-text-muted); margin:1rem auto 2rem; max-width:540px;">
-          Not sure which group or activity is right for you? Get in touch — we'd love to help you find your place.
-        </p>
-        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-          <a href="contact.html" class="btn btn--primary btn--lg">Get in Touch</a>
-          <a href="visit.html" class="btn btn--outline btn--lg">Plan Your Visit</a>
-        </div>
-      </div>
-    </section>
+    
 
   </main>
 
@@ -386,7 +185,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>St Mary's Church Handforth</h3>
+          <h3>St Mary's Methodist Church Handforth</h3>
           <p>A small, friendly Methodist church with a big heart — situated in Handforth village, East Cheshire. Part of the Bramhall &amp; Wythenshawe Methodist Circuit.</p>
           <div class="footer-social" aria-label="Social media links">
             <a href="#" aria-label="Facebook" title="Visit our Facebook page">
